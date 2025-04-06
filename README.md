@@ -5,7 +5,7 @@ Makes "@aztec/aztec.js" work with Vite.
 ## Installation
 
 ```sh
-npm install @shieldswap/vite-plugin-aztec -D
+npm install @nemi-fi/vite-plugin-aztec -D
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install @shieldswap/vite-plugin-aztec -D
 And add `aztec` to your list of plugins:
 
 ```ts
-import { aztec } from "@shieldswap/vite-plugin-aztec";
+import { aztec } from "@nemi-fi/vite-plugin-aztec";
 
 export default defineConfig({
   plugins: [aztec()],
