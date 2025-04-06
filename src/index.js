@@ -1,14 +1,9 @@
 import { nodePolyfills } from "vite-plugin-node-polyfills";
-import resolve from "vite-plugin-resolve";
 
 /**
- * @param {{ aztecVersion?: string }} [options]
  * @returns {import("vite").Plugin<any>[]}
  */
-export function aztec({
-  /** Will serve @aztec/bb.js from unpkg.com if specified */
-  aztecVersion,
-} = {}) {
+export function aztec() {
   return [
     {
       name: "vite-plugin-aztec",
@@ -28,12 +23,6 @@ export function aztec({
         }
       },
     },
-    ...(process.env.NODE_ENV === "production" && aztecVersion
-      ? // TODO: this should be removed once `@aztec/bb.js` is back to normal size again
-        resolve({
-          "@aztec/bb.js": `export * from "https://unpkg.com/@aztec/bb.js@${aztecVersion}/dest/browser/index.js"`,
-        })
-      : []),
     nodePolyfills({
       include: ["buffer", "process", "path"],
     }),

@@ -11,9 +11,6 @@ importers:
       vite-plugin-node-polyfills:
         specifier: 0.17.0
         version: 0.17.0(rollup@4.21.2)(vite@5.4.3(@types/node@22.5.3))
-      vite-plugin-resolve:
-        specifier: ^2.5.1
-        version: 2.5.2
     devDependencies:
       '@types/node':
         specifier: ^22.5.3
@@ -501,9 +498,6 @@ packages:
     resolution: {integrity: sha512-u4sej9B1LPSxTGKB/HiuzvEQnXH0ECYkSVQU39koSwmFAxhlEAFl9RdTvLv4TOTQUgBS5O3O5fwUxk6byBZ+IQ==}
     engines: {node: '>=10'}
 
-  lib-esm@0.4.2:
-    resolution: {integrity: sha512-VGqaEGuryUbT7FLGxXg46nrSzkhLzyk+JQjYoYEORH5UtdIu3yf6DCOqh65FOR3bWOHHGINQH/vR5YGGIFBgJw==}
-
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
@@ -721,9 +715,6 @@ packages:
     resolution: {integrity: sha512-iPmPn7376e5u6QvoTSJa16hf5Q0DFwHFXJk2uYpsNlmI3JdPms7hWyh55o+OysJ5jo9J5XPhLC9sMOYifwFd1w==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
-
-  vite-plugin-resolve@2.5.2:
-    resolution: {integrity: sha512-8twv20M+KIMxkZzAoF1eAUxxxB56NxKdYjIJ309A/30lZ3GAqgiAeGFjVVlLLEpeAcbAwfl9p7jztsQEw7C3Jg==}
 
   vite@5.4.3:
     resolution: {integrity: sha512-IH+nl64eq9lJjFqU+/yrRnrHPVTlgy42/+IzbOdaFDVlyLgI/wDlf+FCobXLX1cT0X5+7LMyH1mIy2xJdLfo8Q==}
@@ -1233,8 +1224,6 @@ snapshots:
 
   isomorphic-timers-promises@1.0.1: {}
 
-  lib-esm@0.4.2: {}
-
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
@@ -1523,10 +1512,6 @@ snapshots:
       vite: 5.4.3(@types/node@22.5.3)
     transitivePeerDependencies:
       - rollup
-
-  vite-plugin-resolve@2.5.2:
-    dependencies:
-      lib-esm: 0.4.2
 
   vite@5.4.3(@types/node@22.5.3):
     dependencies:
